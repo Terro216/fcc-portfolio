@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Survey form (with Bootstrap)</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+  <main>
+  <h1 id="title">
+    Ваше мнение о нашей кофейне
+  </h1>
+    <p id="description">
+      Оно правда важно для нас
+    </p>
+    <br>
+    <form id="survey-form">
+     <div class="form-group">
+      <label for="name" id="name-label">Ваше имя: </label>
+      <input type="text" id="name" placeholder="Алонсо Кихано" class="form-control" required>
+     </div>
+      <div class="form-group">
+      <label for="email" id="email-label">Ваш email: </label>
+      <input type="email" id="email" placeholder="spacemail@gmail.com" class="form-control" required>
+      </div>
+      <div class="form-group">
+      <label for="number" id="number-label">Ваш номер телефона:</label>
+      <input type="number" min="70000000000" max="79999999999" id="number" name="number" placeholder="79164569823" class="form-control">
+      </div>
+      <div class="form-group">
+      <label for="dropdown">Как вам наш кофе?</label>
+      <select class="form-control" name="dropdown" id="dropdown">
+      <option>Чертовски хороший кофе!</option>
+      <option>Мне понравился</option>
+      <option>Средне</option>
+      <option>Не понравился</option>
+      </select>
+      </div>
+      <br>
+        <label>Вы бы порекомендовали нашу кофейню своим друзьям?</label>
+        <div class="form-check">
+  <input class="form-check-input" type="radio" name="forFriends" id="radioYes" value="Yes"checked>
+          <label class="form-check-label" for="radioYes">
+            Да
+        </label>
+        </div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="forFriends" id="radioHm" value="Hm">
+  <label class="form-check-label" for="radioHm">
+    Не знаю
+    </label>
+    </div>
+        <div class="form-check">
+  <input class="form-check-input" type="radio" name="forFriends" id="radioNo" value="No">
+  <label class="form-check-label" for="radioNo">
+    Нет
+    </label> 
+    </div>
+      <br>
+      <label>Что вам больше всего понравилось?</label>
+    <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="atm" id="check1">
+  <label class="form-check-label" for="check1">
+    Атмосфера
+  </label>
+</div>
+      <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="tg" id="check2">
+  <label class="form-check-label" for="check2">
+    Настольные игры
+  </label>
+</div>
+      <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="price" id="check3">
+  <label class="form-check-label" for="check3">
+    Цены
+  </label>
+</div>
+      <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="hall" id="check4">
+  <label class="form-check-label" for="check4">
+    Оформление зала
+  </label>
+</div>
+      <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="console" id="check5">
+  <label class="form-check-label" for="check5">
+    Игровые консоли
+  </label>
+</div>
+      <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="drink" id="check6">
+  <label class="form-check-label" for="check6">
+    Ассортимент напитков
+  </label>
+</div>
+      <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="all" id="check7">
+  <label class="form-check-label" for="check7">
+    Всё
+  </label>
+</div>
+      <br>
+      <div class="form-group">
+    <label for="textArea">Комментарий:</label>
+    <textarea class="form-control" id="textArea" rows="3"></textarea>
+  </div>
+      <br>
+       <div class="form-group">
+      <button type="submit" class="btn btn-primary btn-block btn-lg" id="submit">Готово!</button>
+  </div>
+    </form>
+    </main>
+</body>
+<!-- partial -->
+  
+</body>
+</html>
