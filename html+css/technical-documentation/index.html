@@ -1,0 +1,60 @@
+
+<body>
+  <main id="main-doc">
+    <nav id="navbar"><header>JS Documentation
+      </header>
+      <a href="#Introduction" class="nav-link">Introduction</a>
+        <a href="#What_you_should_already_know" class="nav-link">What you should already know</a>
+      <a href="#Hello_world" class="nav-link">Hello world</a>
+      <a href="#Variables" class="nav-link">Variables</a>
+      <a href="#Declaring_variables"class="nav-link">Declaring variables</a>
+      </nav>
+    <div class="doc">
+    <section id="Introduction" class="main-section">
+      <header><h1>Introduction</h1></header>
+      <p>JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.
+
+JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:<p><ul><li>Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such as mouse clicks, form input, and page navigation.</li><li>Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such as mouse clicks, form input, and page navigation.</li></ul><p>
+    </section>
+    <section id="What_you_should_already_know" class="main-section">
+      <header><h1>What you should already know</header><p>This guide assumes you have the following basic background:</h1><p>
+      <ul>
+        <li>A general understanding of the Internet and the World Wide Web (WWW).</li>
+        <li>Good working knowledge of HyperText Markup Language (HTML)</li>
+        <li>Some programming experience. If you are new to programming, try one of the tutorials linked on the main page about JavaScript.
+</li><p>
+    </section>
+    <section id="Hello_world" class="main-section">
+      <header><h1>Hello world</h1></header><p>
+      To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:<p>
+      <div class="code"><code>function greetMe(yourName) { 
+        alert("Hello " + yourName); 
+        }
+        greetMe("World");</code></div>
+    </section>
+    <section id="Variables" class="main-section">
+      <header><h1>Variables</h1></header><p>
+      You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.
+<p>
+  A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($); subsequent characters can also be digits (0-9). Because JavaScript is case sensitive, letters include the characters "A" through "Z" (uppercase) and the characters "a" through "z" (lowercase).<p>You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers. You can also use the Unicode escape sequences as characters in identifiers. Some examples of legal names are Number_hits, temp99, and _name.
+    </section>
+    <section id="Declaring_variables" class="main-section">
+      <header><h1>Declaring variables</h1></header><p>
+      You can declare a variable in three ways:<p>
+With the keyword var. For example,<p>
+       <div class="code"><code>var x = 42.
+         </code></div> <p>
+      This syntax can be used to declare both local and global variables.
+      <p>
+        By simply assigning it a value. For example,
+<p>
+      <div class="code"><code>x = 42.</code></div><p>
+  This always declares a global variable. It generates a strict JavaScript warning. You shouldn't use this variant.<p>
+      With the keyword let. For example,<p>
+      <div class="code"><code> let y = 13.</code></div>
+    </section>
+      <p><p>
+      To be continued....
+      </div>
+  </main>
+</body>

@@ -1,0 +1,44 @@
+#navbar header{
+  font-size:25px;
+  text-align:center;
+}
+.doc{
+  position:absolute;
+  padding-top:20px;
+  top:0;
+  right:0;
+  width:73%;
+  height:100%;
+}
+#navbar {
+  position: fixed;
+  padding-top:25px;
+  width:25%;
+  height:100%;
+  border-right: 2px solid grey;
+  background-color: rgb(0,25,250,0.2)
+}
+.nav-link {
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: space-between;
+  margin:10px;
+  padding:10px;
+  border-bottom: 1px solid black;
+  color:black;
+  text-decoration:none;
+}
+@media screen and (max-width:400px) {
+  #navbar {
+    display: fixed;
+    posiiton: absolute;
+    left:0;
+    top:0;
+  }
+}
+.code {
+  padding:10px;
+  background-color:lightgrey;
+  width:90%;
+}
