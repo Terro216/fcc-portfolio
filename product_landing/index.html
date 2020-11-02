@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Product Landing Page</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+  <header id="header"> 
+    <div id="logo"><img id="header-img" src="data:image/svg+xml;base64,PHN2ZyBpZD0iQ2FwYV8xIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHdpZHRoPSI1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgaWQ9IlhNTElEXzExNDhfIj48ZyBpZD0iWE1MSURfMzIxXyI+PHBhdGggaWQ9IlhNTElEXzM0Nl8iIGQ9Im0zNzMuMzU4IDI5MC45MmMtNS4xNDEtMi4wMDItMTAuOTQyLjU0NC0xMi45NDYgNS42OTEtMTYuODggNDMuMzY4LTU3Ljg2NCA3MS4zODktMTA0LjQxMiA3MS4zODktNjEuNzU3IDAtMTEyLTUwLjI0My0xMTItMTEyczUwLjI0My0xMTIgMTEyLTExMmM0Ni41NDggMCA4Ny41MzIgMjguMDIyIDEwNC40MTMgNzEuMzkgMi4wMDQgNS4xNDYgNy44MDEgNy42OTYgMTIuOTQ2IDUuNjkxIDUuMTQ3LTIuMDAzIDcuNjk1LTcuNzk5IDUuNjkyLTEyLjk0Ni04LjIyNi0yMS4xMzItMjEuNjMxLTM5LjU5My0zOS4wNTItNTMuOTUydi00MC4xODNjMC0xMi4yNzctNy40MTYtMjIuODQ5LTE4LTI3LjQ4OHYtNzYuNTEyYzAtNS41MjMtNC40NzgtMTAtMTAtMTBoLTExMS45OTljLTUuNTIzIDAtMTAgNC40NzctMTAgMTB2NzYuNTEyYy0xMC41ODQgNC42MzktMTggMTUuMjExLTE4IDI3LjQ4OHY0MC4yNTFjLTI5LjI5OSAyNC4yMzEtNDggNjAuODQ3LTQ4IDEwMS43NDlzMTguNzAxIDc3LjUxOCA0OCAxMDEuNzQ5djQwLjI1MWMwIDEyLjI3NyA3LjQxNiAyMi44NDkgMTggMjcuNDg4djc2LjUxMmMwIDUuNTIzIDQuNDc3IDEwIDEwIDEwaDExMmM1LjUyMiAwIDEwLTQuNDc3IDEwLTEwdi03Ni41MTJjMTAuNTg0LTQuNjM5IDE4LTE1LjIxMSAxOC0yNy40ODh2LTQwLjE4M2MxNy40Mi0xNC4zNTggMzAuODI1LTMyLjgxOCAzOS4wNTEtNTMuOTUgMi4wMDMtNS4xNDctLjU0NS0xMC45NDMtNS42OTMtMTIuOTQ3em0tNzEuMzU4LTI3MC45MnY2NGgtOTJ2LTY0em0tMTEwIDk0YzAtNS41MTQgNC40ODYtMTAgMTAtMTBoMTA4YzUuNTE0IDAgMTAgNC40ODYgMTAgMTB2MjYuNTQ3Yy0xOS41MDctMTAuODQ3LTQxLjM4LTE2LjU0Ny02NC0xNi41NDctMjMuMjA4IDAtNDUuMDMxIDYuMDI4LTY0IDE2LjU4OXptNjQgMjc0YzIyLjYyIDAgNDQuNDkyLTUuNyA2NC0xNi41NDd2MjYuNTQ3YzAgNS41MTQtNC40ODYgMTAtMTAgMTBoLTEwOGMtNS41MTQgMC0xMC00LjQ4Ni0xMC0xMHYtMjYuNTg5YzE4Ljk2OSAxMC41NjEgNDAuNzkyIDE2LjU4OSA2NCAxNi41ODl6bS00NiAxMDR2LTY0aDkydjY0eiIvPjxwYXRoIGlkPSJYTUxJRF8xMzE1XyIgZD0ibTI1NiAxNjhjLTQ4LjUyMyAwLTg4IDM5LjQ3Ny04OCA4OHMzOS40NzcgODggODggODggODgtMzkuNDc3IDg4LTg4LTM5LjQ3Ny04OC04OC04OHptMCAxNTZjLTM3LjQ5NSAwLTY4LTMwLjUwNS02OC02OHMzMC41MDUtNjggNjgtNjggNjggMzAuNTA1IDY4IDY4LTMwLjUwNSA2OC02OCA2OHoiLz48cGF0aCBpZD0iWE1MSURfMTMxNl8iIGQ9Im0yNzUuMDk2IDIyMi43NjItMTkuMDk2IDE5LjA5Ni04LjI2My04LjI2NGMtMy45MDUtMy45MDUtMTAuMjM3LTMuOTA1LTE0LjE0MyAwLTMuOTA1IDMuOTA1LTMuOTA1IDEwLjIzNyAwIDE0LjE0M2wxNS4zMzQgMTUuMzM0YzEuOTU0IDEuOTUzIDQuNTEyIDIuOTI5IDcuMDcyIDIuOTI5IDIuNTU5IDAgNS4xMTgtLjk3NyA3LjA3MS0yLjkyOWwyNi4xNjctMjYuMTY3YzMuOTA1LTMuOTA1IDMuOTA1LTEwLjIzNyAwLTE0LjE0MnMtMTAuMjM1LTMuOTA0LTE0LjE0MiAweiIvPjxwYXRoIGlkPSJYTUxJRF8xMzE3XyIgZD0ibTY0IDgyYy01LjUyMyAwLTEwIDQuNDc3LTEwIDEwdjEyLjQzYzAgNS41MjMgNC40NzcgMTAgMTAgMTBzMTAtNC40NzcgMTAtMTB2LTEyLjQzYzAtNS41MjMtNC40NzctMTAtMTAtMTB6Ii8+PHBhdGggaWQ9IlhNTElEXzEzMThfIiBkPSJtNjQgMTQxLjU3Yy01LjUyMyAwLTEwIDQuNDc3LTEwIDEwdjEyLjQzYzAgNS41MjMgNC40NzcgMTAgMTAgMTBzMTAtNC40NzcgMTAtMTB2LTEyLjQzYzAtNS41MjMtNC40NzctMTAtMTAtMTB6Ii8+PHBhdGggaWQ9IlhNTElEXzEzMTlfIiBkPSJtNDAuNDMgMTE4aC0xMi40M2MtNS41MjMgMC0xMCA0LjQ3Ny0xMCAxMHM0LjQ3NyAxMCAxMCAxMGgxMi40M2M1LjUyMyAwIDEwLTQuNDc3IDEwLTEwcy00LjQ3Ny0xMC0xMC0xMHoiLz48cGF0aCBpZD0iWE1MSURfMTMyMF8iIGQ9Im0xMDAgMTE4aC0xMi40M2MtNS41MjMgMC0xMCA0LjQ3Ny0xMCAxMHM0LjQ3NyAxMCAxMCAxMGgxMi40M2M1LjUyMyAwIDEwLTQuNDc3IDEwLTEwcy00LjQ3Ny0xMC0xMC0xMHoiLz48cGF0aCBpZD0iWE1MSURfMTMyMV8iIGQ9Im00NDggMzM4Yy01LjUyMiAwLTEwIDQuNDc3LTEwIDEwdjEyLjQzYzAgNS41MjMgNC40NzggMTAgMTAgMTBzMTAtNC40NzcgMTAtMTB2LTEyLjQzYzAtNS41MjMtNC40NzgtMTAtMTAtMTB6Ii8+PHBhdGggaWQ9IlhNTElEXzEzMjZfIiBkPSJtNDQ4IDM5Ny41N2MtNS41MjIgMC0xMCA0LjQ3Ny0xMCAxMHYxMi40M2MwIDUuNTIzIDQuNDc4IDEwIDEwIDEwczEwLTQuNDc3IDEwLTEwdi0xMi40M2MwLTUuNTIzLTQuNDc4LTEwLTEwLTEweiIvPjxwYXRoIGlkPSJYTUxJRF8xMzMxXyIgZD0ibTQyNC40MyAzNzRoLTEyLjQzYy01LjUyMiAwLTEwIDQuNDc3LTEwIDEwczQuNDc4IDEwIDEwIDEwaDEyLjQzYzUuNTIyIDAgMTAtNC40NzcgMTAtMTBzLTQuNDc4LTEwLTEwLTEweiIvPjxwYXRoIGlkPSJYTUxJRF8xMzM0XyIgZD0ibTQ4NCAzNzRoLTEyLjQzYy01LjUyMiAwLTEwIDQuNDc3LTEwIDEwczQuNDc4IDEwIDEwIDEwaDEyLjQzYzUuNTIyIDAgMTAtNC40NzcgMTAtMTBzLTQuNDc4LTEwLTEwLTEweiIvPjxwYXRoIGlkPSJYTUxJRF8xMzM1XyIgZD0ibTM3OCAyNDZjLTIuNjMgMC01LjIxIDEuMDctNy4wNyAyLjkzcy0yLjkzIDQuNDQtMi45MyA3LjA3IDEuMDY5IDUuMjEgMi45MyA3LjA3IDQuNDQgMi45MyA3LjA3IDIuOTMgNS4yMS0xLjA3IDcuMDY5LTIuOTNjMS44Ni0xLjg2IDIuOTMxLTQuNDQgMi45MzEtNy4wN3MtMS4wNy01LjIxLTIuOTMxLTcuMDdjLTEuODU5LTEuODYtNC40MzktMi45My03LjA2OS0yLjkzeiIvPjwvZz48L2c+PC9zdmc+"><h2>WowWatch</h2></div>
+    <nav id="nav-bar">
+      <ul>
+        <li><a class="nav-link" href="#about">О нас</a></li>
+        <li><a class="nav-link" href="#showcase">Витрина</a></li>
+        <li><a class="nav-link" href="#form">Связаться</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1 id="title">Магазин необычных наручных часов</h1>
+    <div id="about">
+    <div id="card"><img src="https://img.icons8.com/emoji/96/000000/shield-emoji.png"/><h3>Гарантия до 10 лет</h3></div>
+    <div id="card"><img src="https://img.icons8.com/emoji/96/000000/shopping-bags.png"/><h3>Большой ассортимент</h3></div>
+    <div id="card"><img src="https://img.icons8.com/emoji/96/000000/dollar-banknote-emoji.png"/><h3>Низкие цены</h3></div>
+    </div>
+      
+   <div id="videorow"> <iframe id="video" width="480px" height="240px" src="https://www.youtube.com/embed/bSBdr9Phjdg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>  
+    
+      <div id="showcase">
+        <div id="card2">
+          <img id="card2img" src="https://ae01.alicdn.com/kf/HTB1Z4ovOpXXXXXCXXXXq6xXFXXXp/224182608/HTB1Z4ovOpXXXXXCXXXXq6xXFXXXp.jpg?size=116478&height=800&width=800&hash=8dc798103b20320352107186892926ae" width="200px" height="200px">
+          <div id="descriptionImage">Красивые механические часы с открытым механизмом.<br> Вес - 118гр <br> Материалы: кварцевое стекло, кристаллы, сталь <br> Водонепроницаемые(глубина до 1м)</div>
+          <div id="price">Цена: 4 128,83 руб.</div>
+          <a href="#" id="buyButton">Купить</a>
+        </div>
+        <div id="card2" class="hide">
+          <img src="https://www.alltime.ru/obj/catalog/watch/michael-kors/img/big/MK3890.jpg" id="card2img"  width="100px" height="200px">
+          <div id="descriptionImage">Шикарные часы с россыпью разноцветных кристаллов<br>Вес - 150гр <br> Материалы: Дерево, сталь</div>
+          <div id="price"> Цена: 19 999 руб.</div>
+          <a href="#" id="buyButton">Купить</a>
+        </div>
+        <div id="card2">
+          <img src="https://novate.ru/files/u30770/top-10-cool-minimalistic-watche-ozo-watc.jpg"  id="card2img"  width="300px" height="250px">
+          <div id="descriptionImage">Стильные часы с необычным циферблатом<br>Вес - 100гр <br> Материалы: Дерево, сталь<br>Не водонепроницаемые</div>
+          <div id="price"> Цена: 14 300 руб.</div>
+          <a href="#" id="buyButton">Купить</a>
+        </div>
+      </div>
+    <br>
+      <p>
+      <form id="form">
+        <label id="label" for="email">Оставьте свою почту и мы вам обязательное напишем:</label><br><p>
+        <input type="email" id="email" placeholder="Write your email adress"></input><br><p>
+        <button class="submit" href="#">Оставить свою почту</button>
+      </form>
+  </main>
+  <footer></footer>
+</body>
+<!-- partial -->
+  
+</body>
+</html>
