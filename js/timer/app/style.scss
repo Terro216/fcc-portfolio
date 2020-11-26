@@ -1,0 +1,91 @@
+@mixin button {
+	font-size:1.6em;
+	padding:0px;
+	background-color: transparent;
+	border: 0px;
+	outline: none;
+}
+$backgroundColor:#3399CC;
+$backColor: $backgroundColor;
+$buttonColor: #b8d6ee;
+body {
+	background-color:$backgroundColor;
+	//background: url('https://svgsilh.com/svg/26432.svg');
+	//background-size: 350px 350px;
+	margin:0px;padding:0px;
+}
+#root {
+	width:50%;
+	height:50%;
+	margin: 0 auto;
+	background-color:$backColor;
+	margin-top: 2vh;
+	padding: 20px;
+	border-radius: 15px;
+	font-size:1.6em;
+}
+
+@media screen and (max-width:425px) {
+	#root {
+		font-size: 1em;
+	}
+}
+
+#App{
+#header {
+	text-align: center;
+}
+#setting {
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	#focus,#relax{
+	button {
+		@include button;
+	/*&:nth-child(2){
+		&:after {
+			content: '▲';
+			position: absolute;
+			display: inherit;
+			color: red;
+			visibility: hidden;
+			transition: all 0.1s;
+		}
+		&:active:after{
+			visibility: visible;
+			transition: 0s;
+		}
+	}*/ 
+	}
+}
+}
+#clock {
+	text-align:center;
+	#display{
+	width:50%;
+	height:100%;
+	margin:2% auto;
+	padding:5%;
+	font-size:1.7em;
+	border: 2px solid blue;
+	border-radius: 5px;
+	}
+	#start,#refresh{
+		@include button;
+		font-size: 1.2em;
+		background-color:$buttonColor;
+		margin:10px;
+		padding:15px;
+		border: 1px solid black;
+		border-radius: 10px;
+		&:hover{
+			background-color: rgb(121, 118, 118, 0.5);
+			
+	}
+	}
+}
+}
+.hide {
+	position: absolute;
+	visibility: hidden;
+}
