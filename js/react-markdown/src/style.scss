@@ -1,0 +1,111 @@
+$textBack: #ccffcc;
+$topBack: #339999;
+body {
+  margin: 0px;
+}
+#App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background-color: #ffff33;
+  justify-content: space-between;
+  align-content: space-between;
+  align-items: baseline;
+  overflow: hidden;
+}
+#topLine {
+  width: 50%;
+  min-width: 250px;
+  max-width: 200px;
+  height: 40px;
+  text-align: center;
+  background-color: $topBack;
+  font-size: 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  h1 {
+    padding: 5px;
+  }
+  i {
+    text-align: left;
+    font-size: 0.8em;
+  }
+  #fullscreen {
+    font-size: 0.8em;
+    padding: 2px;
+    margin: 2px;
+    &::hover {
+      color: lightblue;
+    }
+  }
+}
+#mainEditor {
+  height: 100%;
+  width: 100%;
+  min-width: 250px;
+  padding-left: 20px;
+  #editor {
+    background-color: $textBack;
+    height: 80%;
+    width: 90%;
+    resize: none;
+    font-size: 15px;
+  }
+}
+#mainPreview {
+  height: 100%;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  min-width: 250px;
+  #preview {
+    border: 1px dotted black;
+    height: 80%;
+    width: 90%;
+    background-color: white;
+    padding: 0px 20px 0px 20px;
+    overflow-y: scroll;
+    img {
+      display: block;
+      margin: auto;
+      width: 50%;
+      height: auto;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      border-bottom: 3px solid grey;
+    }
+    code {
+      white-space: pre-wrap;
+    }
+    blockquote {
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+      color: #333333;
+      padding-left: 20px;
+    }
+    table {
+      border: 1px solid black;
+      th,
+      td {
+        padding: 5px;
+        border: 1px solid black;
+      }
+    }
+  }
+}
+.big {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: -5px;
+  z-index: 3;
+}
+.hide {
+  visibility: hidden;
+}
